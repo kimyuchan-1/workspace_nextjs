@@ -1,3 +1,5 @@
+'use client'
+
 import { useState, useEffect } from 'react';
 import { supabase } from '@/supabase/client';
 import { useSetAtom } from 'jotai';
