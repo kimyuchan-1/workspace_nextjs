@@ -20,9 +20,11 @@ export default function Header() {
     return (
         <>
             <header className='sticky top-0 left-0 w-full bg-zinc-500 border-b border-zinc-400 text-gray-100 shadow py-1 px-1 z-30'>
-                <nav className='container mx-auto flex items-center justify-between h-16'>
-                    <div className='font-bold text-2xl mx-1 flex flex-row items-center justify-center select-none'>
+                <nav className='flex items-center justify-between h-16 px-13'>
+                    <div >
+                        <Link href='/' className='font-bold text-2xl mx-1 flex flex-row items-center justify-center select-none'>
                         <TbBrandNextjs />&nbsp;KGT Next.js
+                        </Link>
                     </div>
                     <div >
                         { !isLogin && 
@@ -75,6 +77,7 @@ export default function Header() {
                     <Link href="/lotto" onClick={toggleMenu} className='py-3 w-full hover:bg-zinc-600 select-none cursor-pointer text-center'>Lotto</Link>
                     <Link href="/festival" onClick={toggleMenu} className='py-3 w-full hover:bg-zinc-600 select-none cursor-pointer text-center'>Festival</Link>
                     <Link href="/todo" onClick={toggleMenu} className='py-3 w-full hover:bg-zinc-600 select-none cursor-pointer text-center'>TodoList</Link>
+                    <Link href="/app01" onClick={toggleMenu} className='py-3 w-full hover:bg-zinc-600 select-none cursor-pointer text-center'>App01</Link>
                 </ul>
             </div>
         </>

@@ -4,7 +4,7 @@ import { FaInstagram, FaFacebook, FaGithub } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="bg-zinc-500 text-gray-100 p-5 flex justify-between">
+    <footer className="bg-zinc-500 text-gray-100 py-5 px-10 flex justify-between">
       <div className="text-sm">© 2025 부산대학교 김유찬. All rights reserved.</div>
       <div className="flex justify-center space-x-6">
         <a href="https://github.com" aria-label="Github" className="hover:text-lime-400 text-xl transition-colors"><FaGithub /></a>

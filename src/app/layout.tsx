@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <div className='w-full h-screen flex flex-col overflow-hidden'>
           <Header />
-          <main className='w-full container mx-auto flex flex-col grow overflow-y-auto'>
+          <main className='w-full flex flex-col grow overflow-y-auto'>
             {children}
           </main>
           <Footer />
