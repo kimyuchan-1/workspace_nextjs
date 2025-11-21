@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { TbBrandNextjs } from "react-icons/tb";
 import { LuLogIn, LuLogOut } from "react-icons/lu";
 import { MdHome } from "react-icons/md";
 import { useState } from 'react';
@@ -23,14 +22,14 @@ export default function Header() {
                 <nav className='flex items-center justify-between h-16 px-13'>
                     <div >
                         <Link href='/' className='font-bold text-2xl mx-1 flex flex-row items-center justify-center select-none'>
-                        <TbBrandNextjs />&nbsp;KGT Next.js
+                        KGT Next.js
                         </Link>
                     </div>
                     <div >
                         { !isLogin && 
                         <div className='flex items-center'>
                             <Link href='/login' >
-                                <button className='text-md flex flex-row justify-center items-center hover:cursor-pointer hover:bg-yellow-300 hover:text-black rounded-md p-1 m-2 text-white hover:font-bold'>
+                                <button className='text-md flex flex-row justify-center items-center hover:cursor-pointer hover:bg-white hover:text-yellow-500 rounded-md p-1 m-2 text-white hover:font-bold'>
                                     <LuLogIn /><p>&nbsp;Login</p>
                                 </button>
                             </Link>
@@ -44,7 +43,7 @@ export default function Header() {
                         { isLogin &&
                         <div className='flex items-center'>
                             <Link href='/login' >
-                                <button className='text-md flex flex-row justify-center items-center hover:cursor-pointer hover:bg-yellow-300 hover:text-black rounded-md p-1 m-2 text-white hover:font-bold'>
+                                <button className='text-md flex flex-row justify-center items-center hover:cursor-pointer hover:bg-white hover:text-yellow-500 rounded-md p-1 m-2 text-white hover:font-bold'>
                                     <LuLogOut /><p>&nbsp;Logout</p>
                                 </button>
                             </Link>
@@ -78,6 +77,7 @@ export default function Header() {
                     <Link href="/festival" onClick={toggleMenu} className='py-3 w-full hover:bg-zinc-600 select-none cursor-pointer text-center'>Festival</Link>
                     <Link href="/todo" onClick={toggleMenu} className='py-3 w-full hover:bg-zinc-600 select-none cursor-pointer text-center'>TodoList</Link>
                     <Link href="/app01" onClick={toggleMenu} className='py-3 w-full hover:bg-zinc-600 select-none cursor-pointer text-center'>App01</Link>
+                    <Link href="/app02" onClick={toggleMenu} className='py-3 w-full hover:bg-zinc-600 select-none cursor-pointer text-center'>App02</Link>
                 </ul>
             </div>
         </>
