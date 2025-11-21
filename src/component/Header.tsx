@@ -74,8 +74,7 @@ export default function Header() {
                     <Link href='/' onClick={toggleMenu} className='py-3 w-full hover:bg-zinc-600 select-none cursor-pointer text-center'>Home</Link>
                     <Link href="/lotto" onClick={toggleMenu} className='py-3 w-full hover:bg-zinc-600 select-none cursor-pointer text-center'>Lotto</Link>
                     <Link href="/festival" onClick={toggleMenu} className='py-3 w-full hover:bg-zinc-600 select-none cursor-pointer text-center'>Festival</Link>
-                    <Link href="/todolist" onClick={toggleMenu} className='py-3 w-full hover:bg-zinc-600 select-none cursor-pointer text-center'>TodoList</Link>
-                    <Link href="/test" onClick={toggleMenu} className='py-3 w-full hover:bg-zinc-600 select-none cursor-pointer text-center'>Test</Link>
+                    <Link href="/todo" onClick={toggleMenu} className='py-3 w-full hover:bg-zinc-600 select-none cursor-pointer text-center'>TodoList</Link>
                 </ul>
             </div>
         </>
