@@ -20,7 +20,7 @@ export default function Festival() {
 
     const getFetchData = async () => {
         const apiKey = process.env.NEXT_PUBLIC_APP_API_KEY; 
-        const baseUrl = 'https://apis.data.go.kr/6260000/FestivalService/getFestivalKr?';
+        const baseUrl = '/dataApi/6260000/FestivalService/getFestivalKr?';
         let url = `${baseUrl}serviceKey=${apiKey}&pageNo=1&numOfRows=41&resultType=JSON`;
 
         try{
